@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Utama</title>
+    <!-- Memuat Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div id="page-three" class="page">
+      <h1 class="greeting-static">HAPPY<br />BIRTHDAY<br />DINA!</h1>
+
+      <div class="menu-container">
+        <button id="cardsButton" class="menu-button">B'Day Cards</button>
+        <button id="giftButton" class="menu-button">B'Day Gift</button>
+      </div>
+    </div>
+
+    <script>
+      const cardsButton = document.getElementById("cardsButton");
+      const giftButton = document.getElementById("giftButton");
+
+      function navigateTo(url) {
+        document.body.classList.add("fade-out");
+        setTimeout(() => {
+          window.location.href = url;
+        }, 500);
+      }
+
+      cardsButton.addEventListener("click", (e) => {
+        e.preventDefault();
+        navigateTo("pesan.html");
+      });
+
+      giftButton.addEventListener("click", (e) => {
+        e.preventDefault();
+        navigateTo("kado.html");
+      });
+    </script>
+  </body>
+</html>

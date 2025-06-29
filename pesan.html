@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pesan buat Dina</title>
+    <!-- Memuat Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div id="page-four" class="page">
+      <h1 class="message-title">Pesan dari Rifqi</h1>
+
+      <div class="message-container">
+        <div class="message-box">
+          <p>
+            SELAMAT ULANG TAHUUN SAYAAANGG (orang paling nyebelin tapi suka)
+            🥰💕🥳 hihi resmi naik level umur nih, tambah keren dong, bukan cuma
+            tambah tua 😋 semoga kamu selalu diberi kesehatan sama Allah,
+            panjang umur, dimudahkan rezekinya, dimudahkan segala urusan nya,
+            semoga apa yang kamu cita citain bisa tercapai semua aminnnn.
+            <br /><br />
+            Aku tuhh sayaaang banget sama kamu! Senang banget rasanya bisa jadi
+            bagian dari hidup kamu. kamu tuh zona nyaman sekaligus rumah buat
+            semua cerita, tawa, dan keluh kesah aku. I promise I'll do
+            everything I can to make you feel just as safe and dicintai.
+            <br /><br />
+            Terima kasih karena sudah jadi warna paling cerah di hariku, sumber
+            senyumku tiap pagi, alasan kenapa hari hariku lebih bermakna.
+            <br /><br />
+            Aku bangga sama setiap langkah yang kamu ambil, sama kerja keras
+            kamu, sama perjalanan panjang yang sudah membentukmu jadi sosok
+            hebat hari ini. Semoga di ulang tahun dan di tahun tahun berikutnya,
+            kamu selalu dikelilingi orang orang baik, kesempatan bagus, serta
+            kebahagiaan yang nggaa ada habisnya. Aku selalu ngedoain yang
+            terbaik buat kamu.
+            <br /><br />
+            Semoga di hari yang indah ini akan seindah senyuman kamu, sehangat
+            pelukan kamu, dan sesyahdu rasa sayang kita. Aku akan selalu ada di
+            samping kamu, hari ini, besok, dan seterusnya.
+            <br /><br />
+            Ayooo kita rayain ulang tahunmu bareng bareng, sampai tua nanti,
+            setiap tahun, seumur hidup.
+            <br /><br />
+            HAPPY BIRTHDAY, LOVE! I LOVE YOU SO MUCH, lebih dari kemarin, dan
+            kurang dari besok.💋💕
+          </p>
+        </div>
+
+        <img src="assets/Rifqi.gif" alt="Gambar Rifqi" class="message-image" />
+      </div>
+
+      <a href="page3.html" id="backButton" class="back-button">Kembali</a>
+    </div>
+
+    <script>
+      const backButton = document.getElementById("backButton");
+      backButton.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.body.classList.add("fade-out");
+        setTimeout(() => {
+          window.location.href = this.href;
+        }, 500);
+      });
+    </script>
+  </body>
+</html>
